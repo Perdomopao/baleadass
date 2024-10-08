@@ -1,0 +1,81 @@
+ @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .carousel-item {
+            opacity: 0;
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .carousel-item-next,
+        .carousel-item-prev,
+        .carousel-item.active {
+            animation: fadeInUp 1s;
+        }
+
+        /* Estilo adicional para hacer que las imágenes se vean más profesionales */
+        .carousel-item img {
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ajustar el tamaño del carrusel */
+        .carousel {
+            max-width: 1000px;
+            margin: 0 auto; /* Centrar el carrusel */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 590px; /* Definir un tamaño mediano */
+            object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+        }
+
+        /* Estilos para el texto dentro del carrusel */
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .carousel-caption h5 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .carousel-caption p {
+            color: #ddd;
+            font-size: 6px;
+        }
+
+
+
+
+
+
+
+        .btn-primary-custom:hover {
+            background-color: #0056b3; /* Cambio de color en hover */
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.6); /* Más sombra en hover */
+        }
+
+
+
+
+
+
+
+
+
+
+

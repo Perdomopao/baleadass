@@ -1,0 +1,91 @@
+.body {
+    background-color: mistyrose;
+}
+
+
+
+
+
+
+
+
+.card {
+      margin: 20px auto;
+      transition: transform 0.4s ease-in-out;
+      cursor: pointer;
+    }
+
+    /* Ajusta la tarjeta al tamaño de la imagen */
+    .card img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+
+    /* Animación de las tarjetas cuando se hace clic */
+    .card.active {
+      transform: scale(1.2); /* Aumenta el tamaño de la tarjeta */
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    }
+
+
+
+    /* Animación al hacer hover */
+    .card:hover {
+      transform: scale(1.1); /* Aumenta el tamaño de la tarjeta */
+    }
+
+    /* Animación de desvanecimiento */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .card-animated {
+      animation: fadeIn 2s ease;
+    }
+
+
+
+
+
+
+
+
+
+        .btn-primary-custom:hover {
+            background-color: #0056b3; /* Cambio de color en hover */
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.6); /* Más sombra en hover */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
